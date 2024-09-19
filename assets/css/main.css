@@ -218,7 +218,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(77, 44, 169, 0.9);
+  --background-color: rgba(0, 0, 0, 0.789);
 }
 
 /*--------------------------------------------------------------
@@ -751,29 +751,18 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   position: relative;
 }
 
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 400px;
-  height: 1px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
+
 
 .section-title p {
   margin-bottom: 0;
-  margin-top: 2;
+  margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -785,14 +774,34 @@ section,
   position: relative;
   padding: 120px 0 60px 0;
   display: flex;
-  align-items: center;
-  background: linear-gradient(45deg, var(--background-color) 10%, color-mix(in srgb, var(--surface-color), transparent 100%) 100%), url("../img/de cata/fondo\ ppal.webp") center center no-repeat;
+  align-items: right;
+  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 100%) 100%), url("../img/de cata/fondo\ ppal.webp") center center no-repeat;
   background-size: cover;
+}
+
+.hero-content {
+  color: white;
+  padding: 0 50px 50px 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0; /* Asegúrate de que el margen inferior no interfiera */
+  margin-left: 10px;
+  width: auto; /* Ancho automático */
+  max-width: none; /* Sin límite de ancho */
+}
+
+.hero-img {
+  margin: 0;
+  position: relative;
+  padding: 0 50px 50px 50px;
+  margin-right: 0;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 600;
   line-height: 100px;
 }
@@ -882,8 +891,9 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 30pt;
+  font-weight: 500;
+  line-height: 100%;
 }
 
 .about .content ul {
@@ -919,7 +929,11 @@ section,
   align-items: center;
   justify-content: center;
 }
-
+.aaron {
+  font-size: 15pt;
+  font-weight: 400;
+  line-height: 100%;
+}
 .about .content .read-more i {
   font-size: 18px;
   margin-left: 5px;
@@ -989,7 +1003,7 @@ section,
 }
 
 .services .service-item .icon {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 100%);
   width: 72px;
   height: 72px;
   position: relative;
@@ -1024,11 +1038,11 @@ section,
 
 .services .service-item .description {
   font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.services .service-item:hover .icon {
-  background-color: var(--accent-color);
-}
+
 
 .services .service-item:hover .icon i {
   color: var(--contrast-color);
@@ -1044,7 +1058,7 @@ section,
 
 .features .features-item h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 0 5px 0;
 }
 
@@ -1811,12 +1825,13 @@ section,
 
 .service-details h3 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .service-details h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  text-align: left;
 }
 
 .service-details p {
